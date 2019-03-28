@@ -1,0 +1,30 @@
+<view>
+<!-- 顶部搜索框 -->
+  <view class="search">
+    <input type='text' placeholder='商品搜索：请输入商品关键字'
+    placeholder-class="place-holder" name="keywords"></input>
+    <button>搜索</button>
+  </view>
+  <!-- 顶部导航 -->
+  <view class="tab">
+    <span>综合</span>
+    <span>销量</span>
+    <span>价格</span>
+    <span>上新时间</span>
+  </view>
+  <view class="productInfo">
+    <view class="productItem" wx:for="{{productList}}" wx:key="index">
+      <image src="{{item.img_url}}" class="imgInfo" bindtap='handleDetails' data-id="{{item.id}}"></image>
+      <h6>{{item.title}}</h6>
+      <view class="price">
+        <h5>￥{{item.price}}</h5>
+        <span>￥0.00</span>
+        <image src="../img/tabs/cart.png" class="cart"></image>
+      </view>
+    </view>
+  </view>
+  <!-- 底部加载更多 -->
+  <view class="btnInfo">
+    <button class="btn">加载更多</button>
+  </view>
+</view>

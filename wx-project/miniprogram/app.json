@@ -1,0 +1,51 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/userConsole/userConsole",
+    "pages/storageConsole/storageConsole",
+    "pages/databaseGuide/databaseGuide",
+    "pages/addFunction/addFunction",
+    "pages/deployFunctions/deployFunctions",
+    "pages/mine/mine",
+    "pages/chooseLib/chooseLib",
+    "pages/details/details",
+    "pages/shopCart/shopCart",
+    "pages/productInfo/productInfo",
+    "pages/productDetail/productDetail"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#aff",
+    "navigationBarTitleText": "花之物语",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/index/index",
+        "text": "首页",
+        "iconPath": "pages/img/tabs/home.png",
+        "selectedIconPath": "pages/img/tabs/home-active.png"
+      },
+      {
+        "pagePath": "pages/details/details",
+        "text": "全部分类",
+        "iconPath": "pages/img/tabs/class.png",
+        "selectedIconPath": "pages/img/tabs/class1.png"
+      },
+      {
+        "pagePath": "pages/shopCart/shopCart",
+        "text": "购物车",
+        "iconPath": "pages/img/tabs/cart1.png",
+        "selectedIconPath": "pages/img/tabs/cart.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "pages/img/tabs/profile.png",
+        "selectedIconPath": "pages/img/tabs/profile-active.png"
+      }
+    ]
+  }
+}

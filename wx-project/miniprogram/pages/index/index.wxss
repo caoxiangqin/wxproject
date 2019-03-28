@@ -1,0 +1,176 @@
+/**index.wxss**/
+
+/* 顶部的搜索框 */
+.search{
+  display:flex;
+  justify-content: flex-start;
+  margin:25rpx 20rpx 0rpx 20rpx;
+}
+.search input{
+  width:90%;
+  height:20rpx;
+  border:2rpx solid #aaa;
+  border-radius: 5rpx;
+  margin-right:10rpx;
+}
+.place-holder{
+  font-size:26rpx;
+  color:#aaf;
+  margin-left:20rpx;
+
+}
+.search button{
+  width:15%;
+  height:53rpx;
+  font-size:27rpx;
+  border:1rpx solid red;
+  text-align:center;
+  line-height:50rpx;
+  padding:0;
+  color:red;
+}
+/* 轮播图 */
+.slider,swiper,swiper-item,image{
+  width:100%;
+  height:300rpx;
+}
+.slider{
+  margin-top:10rpx;
+}
+/* 八宫格 */
+.grid{
+  width:100%;
+  height:400rpx;
+  display:flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align:center;
+  margin-top:10rpx;
+  border-bottom:5rpx solid #ddd;
+}
+.grid-list{
+  width:25%;
+}
+.grid image{
+  width:100rpx;
+  height:100rpx;
+  border:2rpx solid #faf;
+  border-radius:50%;
+  padding:5rpx;
+}
+.grid h5{
+  font-size:24rpx;
+  margin:auto
+}
+
+/* 图片分隔条 */
+.imgs{
+  display:flex;
+  justify-content: flex-start;
+  padding-bottom:10rpx;
+  border:2rpx solid #aaa;
+  width:100%;
+}
+.imgs image{
+  width:20%;
+  height:50rpx;
+}
+/* 横向滚动条 */
+.scroll-header{
+  display:flex;
+  white-space: nowrap;
+  padding-bottom:10rpx;
+  border-bottom:2rpx solid #ddd;
+}
+.scroll-header view{
+  display:inline-block;
+  padding:10rpx 50rpx;
+}
+.scroll-header h6{
+  font-size:25rpx;
+}
+/* 横向滚动条下的商品详情 */
+.detail{
+  display:flex;
+  justify-content: flex-start;
+  margin:20rpx;
+  border-bottom:2rpx solid #aaa;
+  width:100%;
+}
+.detail image{
+  width:300rpx;
+  height:250rpx;
+}
+.detail .txetInfo{
+  display:flex;
+  flex-direction: column;
+  margin:50rpx;
+}
+.detail .txetInfo p{
+  font-size:25rpx;
+  color:#aaa;
+  text-decoration: line-through;
+}
+.detail .txetInfo h4{
+  margin-right:30rpx;
+  margin-top:40rpx;
+  color:red;
+  font-style: italic
+}
+.detail .txetInfo .price{
+  margin:20rpx 0;
+}
+.detail .txetInfo h6{
+  font-size:25rpx;
+  color:lightskyblue
+}
+.txetInfo h5{
+  font-size:28rpx;
+  color:goldenrod
+}
+/* 横向滚动条 被选中的样式*/
+.is_checked{
+  color:red;
+  border-bottom:4rpx solid red;
+}
+/* 分隔条下面的产品系列 */
+.textName{
+  font-size:30rpx;
+  text-align:center;
+  color:#faf;
+}
+.srollImg{
+  width:40%;
+  height:150rpx;
+}
+/* 开业花篮 */
+.shopOpen{
+  display:flex;
+  justify-content: space-around;
+  margin-top:10rpx;
+  width:100%;
+}
+.shopOpen_img{
+  width:45%;
+  text-align:center;
+  border:1rpx solid #aaa;
+}
+.shopOpen_img image{
+  width:100%;
+}
+.shopOpen_img h6{
+  font-size:25rpx;
+}
+.shopOpen_img h5{
+  font-size:27rpx;
+  color:red
+}
+/* 图片分隔条 */
+.slidBar{
+  width:100%;
+  margin-top:20rpx;
+}
+.slidBar .slidBar_img{
+  width:100%;
+  height:100rpx;
+}

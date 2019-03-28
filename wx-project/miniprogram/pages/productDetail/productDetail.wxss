@@ -1,0 +1,101 @@
+/* 顶部轮播图 */
+.slider{
+  width:100%;
+  height:550rpx;
+}
+.container h6{
+  font-size:30rpx;
+  color:rgb(209, 98, 54)
+}
+.price{
+  margin:20rpx 0;
+  font-size:30rpx;
+}
+.price .priceDetial{
+  font-size:40rpx;
+  color:red;
+  margin-right:30rpx;
+}
+.price .lower{
+  font-size:30rpx;
+  text-decoration: line-through;
+  color:#ddd
+}
+/* 销量的说明 */
+.details span{
+  font-size:30rpx;
+  color:#ddd;
+  margin:40rpx;
+}
+.details{
+  padding-bottom:20rpx;
+  margin-bottom:40rpx;
+  border-bottom:10rpx solid rgb(245, 241, 241);
+}
+/* 商品评价 */
+.content{
+  padding:20rpx;
+  margin:20rpx 0 ;
+  border-top:10rpx solid rgb(245, 241, 241);
+  border-bottom:10rpx solid rgb(245, 241, 241);
+}
+.content span{
+  font-size:30rpx;
+  color:#aaa; 
+}
+/* 商品详情 */
+.proDetails{
+  border-bottom:10rpx solid rgb(245, 241, 241);
+  margin-bottom:20rpx;
+  padding-bottom:20rpx;
+}
+.proDetails span{
+  font-size:30rpx;
+  color:#aaa; 
+  margin-left:20rpx;
+}
+/* 大图片 */
+.img{
+  width:100%;
+  height:300rpx;
+}
+.img image{
+  width:100%;
+  height:300rpx;
+}
+/* 底部导航条部分 */
+.tabs{
+  width:100%;
+  display:flex;
+  justify-content: flex-start;
+  height:80rpx;
+  font-size:20rpx;
+  color:#aaa;
+  margin-top:30rpx;
+}
+.tabs image{
+  width:50rpx;
+  height:50rpx;
+  display:block;
+  margin-left:35rpx;
+}
+.tabs button{
+  width:25%;
+  font-size:30rpx;
+  color:white
+}
+.btn1{
+  background-color:rgb(247, 134, 29);
+  border:1rpx solid #aaa;
+  border-radius:0rpx;
+}
+.btn2{
+  background-color:rgb(209, 102, 14);
+  border-radius:0rpx;
+  border:1rpx solid #aaa;
+}
+.info,.cart,.index{
+  width:17%;
+  text-align:center;
+  margin:0 auto;
+}

@@ -1,0 +1,26 @@
+<!-- 购物车的样式 -->
+<view class="container">
+  <checkbox type="radio"></checkbox>
+  <view class="content">
+    <image src="../img/1-8.png.jpg"></image>
+    <view class="details">
+      <h6>盆栽花卉盆栽绿植 盆栽植物 室内办公室净化空气好养四季绿植</h6>
+      <view class="text">
+        <text class="price">￥228.00</text>
+        <view class="change">
+          <text>-</text>
+          <input type="number" value="1"></input>
+          <text >+</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 导航条上面的合计 -->
+<view class="total">
+  <checkbox type="checkbox"></checkbox>
+  <image src="../img/tabs/delete.png"></image>
+  <text class="price">合计：</text>
+  <text>￥228.00</text>
+  <button>结算</button>
+</view>

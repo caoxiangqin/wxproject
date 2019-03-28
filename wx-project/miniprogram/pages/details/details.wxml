@@ -1,0 +1,33 @@
+<view>
+  <!-- 顶部搜索框 -->
+  <view class="search">
+    <input type='text' placeholder='商品搜索：请输入商品关键字'
+    placeholder-class="place-holder" name="keywords"></input>
+    <button>搜索</button>
+  </view>
+  <view class="container">         
+    <!-- 内容部分的左侧纵向滚动栏 -->
+    <scroll-view scroll-y="true" class="scroll-left">
+      <view class="scrollList"  wx:for="{{scrollInfo}}" wx:key="index">
+        <h6 bindtap='handleText' data-pid="{{item.pid}}">{{item.name}}</h6>
+      </view>
+    </scroll-view>
+    <!-- 内容右边侧滚动栏 -->
+    <scroll-view class="scroll-right" scroll-y="true">
+      <view class="detail" wx:for="{{productInfo}}" wx:key="index">
+        <view >
+          <image src="{{item.img_url}}"></image>
+        </view>
+        <view class="txetInfo">
+          <h5>{{item.title}}</h5>
+          <view class="price">
+            <h4>￥{{item.price}}</h4>
+            <image src="../img/tabs/cart.png" class="cart"></image>
+          </view>
+          
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+</view>

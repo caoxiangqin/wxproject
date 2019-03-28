@@ -1,0 +1,92 @@
+/* 顶部的搜索框 */
+.search{
+  display:flex;
+  justify-content: flex-start;
+  margin:25rpx 20rpx 0rpx 20rpx;
+}
+.search input{
+  width:90%;
+  height:20rpx;
+  border:2rpx solid #aaa;
+  border-radius: 10rpx;
+  margin-right:10rpx;
+}
+.place-holder{
+  font-size:26rpx;
+  color:#aaf;
+  margin-left:20rpx;
+
+}
+.search button{
+  width:15%;
+  height:53rpx;
+  font-size:27rpx;
+  border:1rpx solid red;
+  text-align:center;
+  line-height:50rpx;
+  padding:0;
+  color:red;
+}
+/* 显示区域的大盒子container */
+.container{
+  width:100%;
+  display:flex;
+  justify-content:flex-start;
+  height:1000rpx;
+  white-space:nowrap;
+}
+.scroll-left{
+  width:20%;
+  height:1000rpx;
+  padding:10rpx
+}
+.scrollList{
+  margin:40rpx;
+}
+.scrollList h6{
+  font-size:25rpx;
+}
+/* 右侧滚动条 */
+.scroll-right{
+  width:75%;
+  height:1000rpx;
+  border-left:8rpx solid #ddd;
+  border-top:8rpx solid #ddd; 
+}
+.detail{
+  display:flex;
+  justify-content: flex-start;
+  border-bottom:8rpx solid #ddd;
+  width:100%;
+  line-height: 30rpx;
+}
+.detail image{
+  margin-top:30rpx;
+  padding:5rpx;
+  width:180rpx;
+  height:180rpx;
+  border:2rpx solid #aaa;
+}
+.detail .txetInfo{
+  display:flex;
+  flex-direction: column;
+  margin:50rpx;
+}
+.detail .txetInfo .price{
+  margin-right:30rpx;
+  margin-top:40rpx;
+  color:red;
+  font-style: italic
+}
+.txetInfo h5{
+  font-size:28rpx;
+  color:goldenrod
+}
+.detail .cart{
+  width:40rpx;
+  height:40rpx;
+  /* margin-left:120rpx; */
+  position:relative;
+  top:10rpx;
+  left:72px;
+}

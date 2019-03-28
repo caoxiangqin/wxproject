@@ -1,0 +1,48 @@
+<!-- 顶部轮播图 -->
+<swiper class="slider" loop>
+  <swiper-item>
+    <image src="{{productList[0].img_url}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 文字部分 -->
+<view class="container">
+  <h6>鲜花速递同城混搭情人节花束玫瑰花康乃馨生日百合礼盒（花之物语一元预定）</h6>
+  <view class="price">
+    <span class='priceDetial'>￥{{productList[0].price}}</span>
+    原价：
+    <span class='lower'>1.00</span>
+  </view>
+  <view class="details">
+    <span>剩余：646</span>
+    <span>销量：55笔</span>
+    <span>快递包邮</span>
+  </view>
+  <!-- 商品评价 -->
+  <view class="content">
+    <span>商品评价（0）</span>
+  </view>
+  <view class="proDetails">
+     <span>商品详情</span>
+  </view>
+</view>
+<!-- 大图片部分 -->
+<view class="img">
+  <image src="../img/534546015351672650.jpg"></image>
+</view>
+<!-- 底部导航条部分 -->
+<view class="tabs">
+  <view class="info">
+    <image src="../img/info.png"></image>
+    <span>客服</span>
+  </view>
+  <view class="cart">
+    <image src="../img/tabs/cart2.png"></image>
+    <span>购物车</span>
+  </view>
+  <view class="index">
+    <image src="../img/tabs/home-active.png"></image>
+    <span>首页</span>
+  </view>
+  <button class="btn1">加入购物车</button>
+   <button class="btn2">立即预定</button>
+</view>

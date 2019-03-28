@@ -1,0 +1,101 @@
+<!--index.wxml-->
+<view class="container">
+<!-- 顶部搜索框 -->
+  <view class="search">
+    <input type='text' placeholder='商品搜索：请输入商品关键字'
+    placeholder-class="place-holder" name="keywords"></input>
+    <button>搜索</button>
+  </view>
+  <!-- 轮播图 -->
+  <view class="slider">
+    <swiper autoplay indicator-dots='solid'>
+      <swiper-item wx:for="{{imgList}}" wx:key="index">
+        <image src="{{item.img_url}}" lazy-load mode='widFix'></image>
+      </swiper-item>
+    </swiper>
+  </view>
+  <!-- 八宫格 -->
+  <view class="grid">
+    <view class="grid-list" wx:for="{{gridList}}" wx:key="index">
+      <view >
+        <image src="{{item.img_url}}" bindtap='handleJump' data-id="{{item.pid}}"></image>
+      </view>
+      <h5>{{item.name}}</h5>
+    </view>
+  </view>
+  <!-- 分隔图片1 -->
+  <view class="imgs">
+    <image src="../img/9-1.jpg"></image>
+    <image src="../img/9-2.jpg"></image>
+    <image src="../img/9-3.jpg"></image>
+    <image src="../img/9-4.jpg"></image>
+    <image src="../img/9-5.jpg"></image>
+  </view>
+  <!-- 横向的滚动条 -->
+  <scroll-view scroll-x="true" class="scroll-header">
+    <view wx:for="{{scrollInfo}}" wx:key="index" class="{{isSelected?is_checked:''}}">
+      <h6 class="scroll-text" bindtap='handleChange' data-pid="{{item.pid}}">{{item.name}}</h6>
+    </view>
+  </scroll-view>
+  <!-- 横向滚动的商品详情 -->
+  <scroll-view scroll-y="true" style="height: 600rpx;">
+    <view class="detail" wx:for="{{productInfo}}" wx:key="index">
+      <view >
+        <image src="{{item.img_url}}" bindtap='handleDetais' data-id="{{item.id}}"></image>
+      </view>
+      <view class="txetInfo">
+        <h5>{{item.title}}</h5>
+        <view class="price">
+          <h4>￥{{item.price}}</h4>
+          <p>￥0.00</p>
+        </view>
+        <h6>销量：0</h6>
+      </view>
+    </view>
+  </scroll-view>
+
+
+  <!-- 分隔图片1 -->
+  <view class="imgs">
+    <image src="../img/9-6.jpg"></image>
+    <image src="../img/9-7.jpg"></image>
+    <image src="../img/9-8.jpg"></image>
+    <image src="../img/9-9.jpg"></image>
+    <image src="../img/9-10.jpg"></image>
+  </view>
+
+
+
+
+
+
+  <!-- 分类优先 -->
+  <view class="textName">
+    <h6>-- 礼盒系列 --</h6>
+  </view>
+  <scroll-view scroll-x="true" class="scroll-header">
+    <image src="{{item.img_url}}" wx:for="{{scrollImg}}" wx:key="index" class="srollImg"></image>
+  </scroll-view>
+<!-- 开业花篮 -->
+  <view class="textName">
+    <h6>-- 开业花篮 --</h6>
+  </view>
+  <view class="shopOpen">
+    <view class="shopOpen_img">
+      <image src="../img/4-4.png"></image>
+      <h6>开业花篮</h6>
+      <h5>￥268.00</h5>
+    </view>
+    <view class="shopOpen_img">
+      <image src="../img/4-7.png"></image>
+      <h6>开业花篮</h6>
+      <h5>￥368.00</h5>
+    </view>
+  </view>
+  <!-- 分隔条 -->
+  <view class="slidBar">
+    <image src='../img/banner6164.gif' class="slidBar_img" ></image>
+  </view> 
+</view>
+
+   

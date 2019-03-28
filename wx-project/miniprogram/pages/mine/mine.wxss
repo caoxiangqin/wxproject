@@ -1,0 +1,89 @@
+/* 图部自动获取信息 */
+.userinfo {  
+    position: relative;  
+    width: 100%;  
+    height: 320rpx;  
+    color:blck;  
+    display: flex;  
+    flex-direction: column;  
+    align-items: center;  
+  }   
+  .userinfo-avatar {  
+    overflow:hidden;  
+    display: block;  
+    width: 160rpx;  
+    height: 160rpx;  
+    margin: 20rpx;  
+    margin-top: 50rpx;  
+    border-radius: 50%;  
+    border: 2px solid #fff;  
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);  
+  }  
+
+/* 个人余额和积分 */
+.mine{
+  display:flex;
+  justify-content: space-around;
+  width:100%;
+  border-top:1rpx solid #ddd;
+  padding:10rpx 0;
+  border-bottom:10rpx solid #ddd;
+}
+.sorce{
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+  width:50%;
+  font-size:20rpx;
+}
+/* 我的订单 */
+.order{
+  width:100%;
+  display:flex;
+  padding:20rpx;
+  border-bottom:1rpx solid #ddd;
+  font-size:25rpx;
+}
+/* 图片设置 */
+.img{
+  width:30rpx;
+  height:30rpx;
+  margin:0 15rpx;
+}
+.icon{
+  margin-left:530rpx;
+}
+/* 待发货，待付款，待收货，售后 */
+.list{
+  width:100%;
+  display:flex;
+  justify-content:space-around;
+  padding:10rpx;
+  border-bottom:10rpx solid #ddd
+}
+.list .item{
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+.list .img{
+  width:50rpx;
+  height:50rpx;
+  margin:10rpx 0;
+}
+.textSize{
+  font-size:20rpx;
+  color:rgb(22, 13, 13);
+}
+.order .icon1{
+  margin-left:550rpx
+}
+.order .icon2{
+  margin-left:570rpx;
+}
+.order .icon3{
+  margin-left:520rpx;
+}
+.order .icon4{
+  margin-left:500rpx;
+}

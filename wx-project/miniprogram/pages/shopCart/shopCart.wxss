@@ -1,0 +1,84 @@
+/* 购物车列表 */
+.container{
+  display: flex;
+  width:100%;
+  margin:10rpx 0;
+  border:1rpx solid #ddd
+}
+/* 购物车下的单选按钮 */
+.container checkbox{
+  line-height:150rpx;
+}
+/* 图片大小设置 */
+.content{
+  width:90%;
+  display:flex;
+  
+}
+.content image{
+  width:150rpx;
+  height:150rpx;
+  margin:10rpx;
+}
+.content .details h6{
+  font-size:25rpx;
+  color:#aaa;
+}
+.details .text {
+  width:100%;
+  display:flex;
+  text-align: center
+}
+.price{
+  font-size:25rpx;
+  color:red;
+  line-height: 70rpx;
+}
+/* 加减按钮样式 */
+.change{
+  display:flex;
+  justify-content: flex-end;
+  width:50%;
+}
+.change text{
+  width:40rpx;
+  height:52rpx;
+  border:1rpx solid #ddd;
+  text-align:center;
+}
+.change input{
+  padding:0rpx;
+  font-size:25rpx;
+  width:50rpx;
+  height:30rpx;
+  border:1rpx solid #ddd
+}
+/* 导航条上面的合计 */
+.total{
+  border-top:1rpx solid #ddd;
+  display:flex;
+  position:fixed;
+  width:100%;
+  bottom:4rpx;
+  font-size:30rpx;
+  line-height: 40rpx;
+  align-items:center;
+}
+.total image{
+  width:40rpx;
+  height:40rpx;
+  margin-left:10rpx;
+}
+.total button{
+  width:150rpx;
+  font-size:20rpx;
+  color:white;
+  background:rgb(223, 87, 9);
+  height:60rpx;
+  line-height:60rpx;
+  margin-left:200rpx;
+  border-radius:0rpx;
+}
+.total .price{
+  margin-left:90rpx;
+}

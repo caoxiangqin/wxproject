@@ -1,0 +1,83 @@
+<view >
+<!-- 微信获取自己的图像和姓名 -->
+  <view class="userinfo">
+    <view class="userinfo-avatar">
+      <open-data  type="userAvatarUrl"></open-data>
+    </view>
+      <open-data type="userNickName"></open-data>
+  </view>
+  <!--个人余额和积分  -->
+  <view class='mine'>
+    <view class="sorce">
+      <text>0.00</text>
+      <text>储值余额</text>
+    </view>
+    <view class="sorce">
+      <text>0</text>
+      <text>剩余积分</text>
+    </view>
+  </view>
+  <!-- 我的订单 -->
+  <view class="order">
+    <image src="../img/min/text.png" class="img"></image>
+    <text>我的订单</text>
+    <text class="icon">〉</text>
+  </view>
+  <!-- 售后，代发货，待收货。售后 -->
+  <ul class="list">
+    <li class="item">
+      <image class="img" src='../img/min/pay.png'></image>
+      <text class="textSize">待付款</text>
+    </li>
+    <li class="item">
+      <image class="img" src='../img/min/drop.png'></image>
+      <text class="textSize">待发货</text>
+    </li>
+    <li class="item">
+      <image class="img" src='../img/min/wait.png'></image>
+      <text class="textSize">待收货</text>
+    </li>
+    <li class="item">
+      <image class="img" src='../img/min/afterSale.png'></image>
+      <text class="textSize">售后</text>
+    </li>
+  </ul>
+  <!-- 详细列表 会员卡 优惠券 储值金 积分 地址管理 购物车 -->
+  <ul>
+    <li class="order">
+      <image src="../img/min/vip.png" class="img"></image>
+      <text>会员卡</text>
+      <text class="icon1">〉</text>
+    </li>
+    <li class="order">
+      <image src="../img/min/coupons.png" class="img"></image>
+      <text>优惠券</text>
+      <text class="icon1">〉</text>
+    </li>
+    <li class="order">
+      <image src="../img/min/gold.png" class="img"></image>
+      <text>储值金</text>
+      <text class="icon1">〉</text>
+    </li>
+    <li class="order">
+      <image src="../img/min/score.png" class="img"></image>
+      <text>积分</text>
+      <text class="icon2">〉</text>
+    </li>
+    <li class="order">
+      <image src="../img/min/adress.png" class="img"></image>
+      <text>地址管理</text>
+      <text class="icon3">〉</text>
+    </li>
+    <li class="order">
+      <image src="../img/tabs/cart1.png" class="img"></image>
+      <text>购物车</text>
+      <text class="icon1">〉</text>
+    </li>
+    <li class="order">
+      <image src="../img/tabs/home.png" class="img"></image>
+      <text>小程序首页</text>
+      <text class="icon4">〉</text>
+    </li>
+  </ul>
+</view>
